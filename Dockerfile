@@ -1,5 +1,6 @@
 FROM rust:1.60 as base
 WORKDIR /app
+RUN rustup target add wasm32-wasi
 RUN cargo install cargo-build-deps
 RUN wget https://github.com/fermyon/spin/releases/download/v0.1.0/spin-v0.1.0-linux-amd64.tar.gz
 RUN tar -zxf spin-v0.1.0-linux-amd64.tar.gz
