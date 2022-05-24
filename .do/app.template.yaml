@@ -1,0 +1,8 @@
+spec:
+  name: sample-rust-spin
+  services:
+  - name: spin
+    dockerfile_path: Dockerfile
+    git:
+      branch: main
+      repo_clone_url: https://github.com/bojand/sample-rust-spin.git

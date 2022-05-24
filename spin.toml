@@ -1,0 +1,10 @@
+spin_version = "1"
+name = "sample-rust-spin"
+trigger = { type = "http", base = "/" }
+version = "1.0.0"
+
+[[component]]
+id = "hello"
+source = "/app/sample-rust-spin.wasm"
+[component.trigger]
+route = "/"
