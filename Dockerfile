@@ -4,7 +4,7 @@ RUN rustup target add wasm32-wasi
 
 FROM base as builder
 WORKDIR /app
-COPY Cargo.toml Cargo.lock spin.toml /app/
+COPY Cargo.toml spin.toml /app/
 COPY src /app/src/
 RUN cargo build --target wasm32-wasi --release
 
