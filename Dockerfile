@@ -6,8 +6,7 @@ RUN tar -zxf spin-v0.1.0-linux-amd64.tar.gz
 
 FROM base as builder
 WORKDIR /app
-COPY Cargo.toml Cargo.lock spin.toml /app/
-COPY src /app/src
+COPY . .
 RUN cargo build --target wasm32-wasi --release
 
 FROM debian:buster-slim as runtime
