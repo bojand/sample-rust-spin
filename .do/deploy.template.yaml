@@ -6,3 +6,5 @@ spec:
     git:
       branch: main
       repo_clone_url: https://github.com/bojand/sample-rust-spin.git
+    health_check:
+      http_path: /healthz

@@ -6,3 +6,5 @@ services:
     branch: main
     deploy_on_push: true
     repo: bojand/sample-rust-spin
+  health_check:
+    http_path: /healthz
