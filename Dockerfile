@@ -11,7 +11,7 @@ RUN cargo build --target wasm32-wasi --release
 
 FROM debian:buster-slim as runtime
 WORKDIR /app
-COPY --from=base /app/spin /usr/local/spin
+COPY --from=base /app/spin /usr/local/bin/spin
 COPY --from=builder /app/target/wasm32-wasi/release/sample_rust_spin.wasm /app/sample_rust_spin.wasm
 COPY --from=builder /app/spin.toml /app/spin.toml
 ENTRYPOINT ["spin", "up", "--listen", "0.0.0.0:8080"]
