@@ -5,6 +5,6 @@ version = "1.0.0"
 
 [[component]]
 id = "hello"
-source = "/app/sample-rust-spin.wasm"
+source = "/app/sample_rust_spin.wasm"
 [component.trigger]
 route = "/"
