@@ -1,4 +1,4 @@
-FROM rust:1.49 as base
+FROM rust:1.60 as base
 WORKDIR /app
 RUN cargo install cargo-build-deps
 RUN wget https://github.com/fermyon/spin/releases/download/v0.1.0/spin-v0.1.0-linux-amd64.tar.gz
