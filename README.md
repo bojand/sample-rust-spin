@@ -1,5 +1,4 @@
 # sample-rust-spin
-Sample DigitalOcean App Platform app in Rust using Spin WebAssembly framework
 
 Sample DigitalOcean [App Platform](https://www.digitalocean.com/products/app-platform/) application in Rust using [Spin](https://github.com/fermyon/spin) framework.
 
